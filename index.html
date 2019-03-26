@@ -19,43 +19,148 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<!-- HEADER -->
+	
 	<header>
-		<nav class="navbar main-nav">
-			<div class="vertical-line">
-				<a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+		<!--INICIO NAVBAR-->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand navbar-brand_home" href="#"><img src="assets/img/logo.svg" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a data-scroll class="nav-link" href="#home">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a data-scroll class="nav-link" href="#how_it_works">¿Cómo funciona?</a>
+					</li>
+					<li class="nav-item">
+						<a data-scroll class="nav-link" href="#">Locales adheridos</a>
+					</li>
+					<li class="nav-item">
+						<a data-scroll class="nav-link" href="#">Contacto</a>
+					</li>
+				</ul>
 			</div>
-			<div class="content-store row">
-				<div class="col-md-12">
-					<a href="https://play.google.com/store/apps?hl=es"><img src="assets/img/appstore.png" alt="appstore"></a>
-				</div>
-				<div class="col-md-12">
-					<a href="https://play.google.com/store/apps?hl=es"><img src="assets/img/googlestore.png" alt="googlestore"></a>
-				</div>
-			</div>			
+			</div>
 		</nav>
-	</header>
-	<!-- MAIN -->
-	<div class="main">
-		<div data-aos="fade-right" class="row ">
-			<div class="col-lg-6 ">
-				<div class="main_title">
-					<h1>
-						La app que mejora el servicio en Bares y Restaurantes
-					</h1>
+		<!-- MAIN TEXTO -->
+		<div id="home" class="main_home">
+			<div data-aos="fade-down" class="container">
+				<div class="main_content">
+					<h2>No hay mejor servicio que el que se entrega con Good Vibes</h2>
 				</div>
-				<div >
-					<iframe src="https://www.youtube.com/embed/EsmZqRKetx0" frameborder="0" allowfullscreen class="video">
-					</iframe>
-				</div>
-				<div>
-					<a href="clientes.html"><button type="button" class="btn"><b>Para usuarios de la App</b></button></a>
-					<a href="notprogrammedyet.html"><button type="button" class="btn"><b>Para empresas</b></button></a>
+				<div class="row main_icons">
+					<div class=" col-sm-1 "></div>
+					<div class=" col-sm-2 col-xs-6">
+						<a data-scroll href="#seccion1"><img src="assets/img/icon1.svg" alt="icon"></a>
+						<a data-scroll href="#seccion1"><p>Carta menú online</p></a>
+					</div>
+					<div class="col-sm-2 col-xs-6">
+						<a data-scroll href="#seccion2"><img src="assets/img/icon2.svg" alt="icon"></a>
+						<a data-scroll href="#seccion2"><p>Pedido de clientes directo a la barra o cocina</p></a>
+					</div>
+					<div class=" col-sm-2 col-xs-6">
+						<a data-scroll href="#seccion3"><img src="assets/img/icon3.svg" alt="icon"></a>
+						<a data-scroll href="#seccion3"><p>Aparece en nuestro buscador</p></a>
+					</div>
+					<div class=" col-sm-2 col-xs-6">
+						<a data-scroll href="#seccion4"><img src="assets/img/icon4.svg" alt="icon"></a>
+						<a data-scroll href="#seccion4"><p>Cambios de precios fácilmente</p></a>
+					</div>
+					<div class=" col-sm-2 col-xs-6">
+						<a data-scroll href="#seccion5"><img src="assets/img/icon5.svg" alt="icon"></a>
+						<a data-scroll href="#seccion5"><p>Programa tus promociones</p></a>
+					</div>
 				</div>
 			</div>
-		</div><!--Row-->	
-
+		</div>
+	</header>
+	<!-- COMO FUNCIONA -->
+	<div id="how_it_works" class="how_it_works">
+		<div data-aos="fade-up" class="iframeContainer col-md-8 col-md-offset-4">
+			<iframe src="https://www.youtube.com/embed/xEO4s-EzBPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 	</div>
+	<!-- SECCIONES -->
+	<!-- SECCION1 -->
+	<div data-aos="fade-right" id="seccion1" class="service">
+		<div class="row">
+			<div class="col-md-6 service_card">
+				<div class="service_img col-md-3 col-md-offset-9">
+					<img src="assets/img/icon1g.svg" alt="">
+				</div>
+				<h2>TU CARTA MENÚ ONLINE</h2>
+				<p>Presenta tu menú con un diseño elegante a tus clientes y ellos podrán verla a través de la App desde cualquier lugar, incluso antes de llegar!</p>
+			</div>
+			<div class="col-md-6 service_thumbnail img-responsive">
+				<img src="assets/img/tucartamenuonline.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- SECCION2 -->
+	<div data-aos="fade-right" id="seccion2" class="service">
+		<div class="row">
+			<div class="col-md-6 service_card">
+				<div class="service_img col-md-3 col-md-offset-9">
+					<img src="assets/img/icon2g.svg" alt="">
+				</div>
+				<h2>NO PIERDAS VENTAS!</h2>
+				<p>Aún si tus meseros se encuentran ocupados o cuentas con pocos meseros, tus clientes podrán pedir directamente a la barra o a la cocina desde sus celulares, y los meseros ahora solo se encargarán de llevar el pedido a la mesa.</p>
+			</div>
+			<div class="col-md-6 service_thumbnail img-responsive">
+				<img src="assets/img/nopierdasventas.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- SECCION3 -->
+	<div data-aos="fade-right" id="seccion3" class="service">
+		<div class="row">
+			<div class="col-md-6 service_card">
+				<div class="service_img col-md-3 col-md-offset-9">
+					<img src="assets/img/icon3g.svg" alt="">
+				</div>
+				<h2>AUMENTA TU VISILIBILIDAD CON LA RED GOOD VIBES </h2>
+				<p>Los locales que cuentan con Good Vibes serán publicitados en nuestras redes sociales, así darás a conocer tu local a más clientes!</p>
+			</div>
+			<div class="col-md-6 service_thumbnail img-responsive">
+				<img src="assets/img/nopierdasvisibilidad.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- SECCION4 -->
+	<div data-aos="fade-right" id="seccion4" class="service">
+		<div class="row">
+			<div class="col-md-6 service_card">
+				<div class="service_img col-md-3 col-md-offset-9">
+					<img src="assets/img/icon4g.svg" alt="">
+				</div>
+				<h2>CAMBIA PRECIOS Y MANEJA TUS PROMOCIONES FACILMENTE</h2>
+				<p>Con Good Vibes podrás cambiar los precios fácilmente estés donde estés! y  programar tus promociones con los productos que quieras y con tiempo determinado, así mantendrás a tus clientes siempre informados de tus novedades.</p>
+			</div>
+			<div class="col-md-6 service_thumbnail img-responsive">
+				<img src="assets/img/aumentatusventas.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- SECCION5 -->
+	<div data-aos="fade-right" id="seccion5" class="service">
+		<div class="row">
+			<div class="col-md-6 service_card">
+				<div class="service_img col-md-3 col-md-offset-9">
+					<img src="assets/img/icon5g.svg" alt="">
+				</div>
+				<h2>AUMENTA TUS VENTAS!</h2>
+				<p>Atenderás más rápido a tus comensales, aumentando la rotación de las mesas, y por lo tanto también tus ventas!</p>
+			</div>
+			<div class="col-md-6 service_thumbnail img-responsive">
+				<img src="assets/img/aumentatusventas.jpg" alt="">
+			</div>
+		</div>
+	</div>
+
 	<!--FOOTER-->
 	<footer>
 		<div class="row">
@@ -77,8 +182,7 @@
 		
 	</footer>
 
-	<!-- JQuery Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<!-- JQUERY -->

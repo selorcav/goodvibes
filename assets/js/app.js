@@ -1,4 +1,5 @@
-(function($) {          
+(function($) {
+
     $(document).ready(function(){
 		$(window).scroll(function() {    
 			var scroll = $(window).scrollTop();
@@ -23,3 +24,4 @@
   }
   $('[data-scroll]').on('click', scrollToSection);
 })(jQuery);
+
