@@ -1,0 +1,173 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.main-nav{
+	background-color: #00657E;
+}
+.main-nav img{
+	padding: 12px;
+}
+.navbar-brand img{
+	height: 100px;
+}
+.navbar-brand_home img{
+	height: 50px;
+}
+.vertical-line{
+	border-right: 1px solid white;
+	margin-left:  15px;
+}
+.content-store img{
+	height: 40px;
+	float: right;
+	padding: 5px;
+}
+.main{
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	background-position: 80% 0%;
+}
+.main_home{
+	background-image: url(../img/background_home.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	background-position: center;
+}
+.main_content{
+	padding-top: 220px;
+}
+.main_color{
+	background-color: rgba(0,0,0,0.3);
+}
+.main_title h1{
+	padding: 30px;
+	font-size: 40px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	text-align: left;
+	text-shadow: 1.5px 1.5px #000;
+}
+.main_content h2{
+	background-color: rgba(171, 175, 0, .8);
+	border-radius: 50px;
+	font-family: 'Lato', sans-serif;
+	padding: 20px;
+	display: inline-block;
+	color: white;
+	font-size: 22px;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+	font-size: 14px;
+	padding: 10px 35px;
+	font-weight: 700;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #C5CF38;
+}
+.video{
+	padding: 10 20px;
+    width: 100%;
+    height: 50vh;
+}
+.btn{
+	padding: 10px;
+	margin: 20px;
+	border-radius: 15px;
+	background-color: #C5CF38;
+	color: #00657E;
+}
+.btn:hover{
+	background-color: #ABAF00;
+	color: #005260;
+}
+.bg-color{
+	background-color: #00657E;
+	transition: 0.5s;
+}
+.main_icons img{
+	height: 150px;
+	width: auto;
+	padding: 40px 20px;
+	margin-top: 40px;
+}
+.main_icons p{
+	color: white;
+	font-size: 14px;
+}
+.main_icons p:hover{
+	color: #C5CF38;
+	font-size: 14px;
+	outline-color: transparent;
+}
+.how_it_works{
+	background-color: #00657E;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container iframe{
+	width: 64vw;
+	height:64vh;
+	padding-top: 15%;
+}
+footer{
+	background-color: #00657E;
+	color: white;
+	padding: 10px 0px ;
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+}
+footer a{
+	color: white;
+}
+.row{
+	margin: 0;
+}
+.icons{
+	font-size: 30px;
+}
+.fa-facebook:hover{
+	color: #8b9dc3;
+}
+.fa-youtube:hover{
+	color: #ff0000;
+}
+.fa-twitter:hover{
+	color:#1dcaff;
+}
+.fa-instagram:hover{
+	color:#bc2a8d;
+}
+.copyright{
+	font-size: 10px;
+	padding-top: 30px;
+}
+@media only screen and (max-width: 618px){
+	.main{
+		height: auto;
+	}
+	.main_title h1{
+		font-size: 30px;
+	}
+	.btn{
+		margin: 10px;
+	}
+}
+@media only screen and (max-width: 518px){
+	.content-store img{
+		display: none;
+	}
+}
+@media only screen and (max-width: 430px){
+	.copyright{
+		padding-top: 0;
+	}
+}
